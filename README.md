@@ -1,4 +1,4 @@
-# Random Quote Generator
+# Random Quote Generator by Jonathon Cisneros
 
 This program generates random quotes every five seconds and/or
 when button is clicked.
