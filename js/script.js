@@ -14,6 +14,7 @@ project 1 - A Random Quote Generator
   Add the `year` property to at least one object in the array.
   Use console.log() to log your array of quotes to the console.
 ***/
+
 var quotes = [
     {
         quote : 'Life is like a box a chocolate, you never know what your going to get.',
@@ -49,15 +50,6 @@ var quotes = [
     }
 ];
 
-/*
-** Testing the array
-*/
-var quote = document.querySelector('.quote');
-var source = document.querySelector('.source');
-quote.innerHTML = quotes[6].quote;
-source.innerHTML = quotes[6].source;
-
-
 
 /***
   Create the `getRandomQuote` function to:
@@ -65,8 +57,10 @@ source.innerHTML = quotes[6].source;
    - Cse the random number to `return` a random quote object from the `quotes` array.
 ***/
 
-
-
+function getRandomQuote () {
+    var random = Math.floor(Math.random() * quotes.length);
+    return quotes[random];
+}
 
 /***
   Create the `printQuote` function to:
@@ -80,7 +74,6 @@ source.innerHTML = quotes[6].source;
    - Don't forget to close that final `p` tag.
    - Set the `innerHTML` of the `quote-box` div to the HTML string.
 ***/
-
 
 
 
