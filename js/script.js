@@ -6,7 +6,7 @@ project 1 - A Random Quote Generator
 // Study guide for this project - https://drive.google.com/file/d/1s5grutGuQFwJcQP8bFwEI69Q8FCkGdDk/view?usp=sharing
 
 
-/*** 
+/***
   Create the array of quote objects and name it `quotes`.
   Add at least five quote objects to the `quotes` array.
   Give each quote object a `quote` and `source` property.
@@ -14,13 +14,54 @@ project 1 - A Random Quote Generator
   Add the `year` property to at least one object in the array.
   Use console.log() to log your array of quotes to the console.
 ***/
+var quotes = [
+    {
+        quote : 'Life is like a box a chocolate, you never know what your going to get.',
+        source : 'Forrest Gump',
+        citation : 'Forrest Gump',
+        year : '1994'
+    },
+    {
+        quote : 'Be the change that you wish to see in the world.',
+        source : 'Mahatma Gandhi'
+    },
+    {
+        quote : "I have not failed. I've just found 10,000 ways that won't work.",
+        source : 'Thomas Edison'
+    },
+    {
+        quote : 'No matter where life takes me, find me with a smile.',
+        source : 'Mac Miller',
+        citation : 'Best Day Ever',
+        year : '2011'
+    },
+    {
+        quote : 'Anyone who has never made a mistake has never tried anything new.',
+        source : 'Albert Eintstein'
+    },
+    {
+        quote : 'Learning never exhausts the mind.',
+        source : 'Leonardo da Vinci'
+    },
+    {
+        quote : 'Lord, make me an instrument of thy peace. Where there is hatred, let me sow love.',
+        source : 'Francis of Assisi'
+    }
+];
 
+/*
+** Testing the array
+*/
+var quote = document.querySelector('.quote');
+var source = document.querySelector('.source');
+quote.innerHTML = quotes[6].quote;
+source.innerHTML = quotes[6].source;
 
 
 
 /***
   Create the `getRandomQuote` function to:
-   - Create a variable to store a random number 
+   - Create a variable to store a random number
    - Cse the random number to `return` a random quote object from the `quotes` array.
 ***/
 
@@ -28,29 +69,30 @@ project 1 - A Random Quote Generator
 
 
 /***
-  Create the `printQuote` function to: 
+  Create the `printQuote` function to:
    - Call the `getRandomQuote` function and assign it to a variable.
    - Create a variable for the HTML string and set it equal to an empty string.
-   - Use the HTML template in the instructions or the markup in the index.html file, AND 
+   - Use the HTML template in the instructions or the markup in the index.html file, AND
      the random quote vairable to build your HTML string.
    - Add the quote and source section to the HTML string.
    - Use an if statement to check for the citation property before adding it to the HTML string.
    - Use an if statement to check for the year property before adding it to the HTML string.
    - Don't forget to close that final `p` tag.
-   - Set the `innerHTML` of the `quote-box` div to the HTML string. 
+   - Set the `innerHTML` of the `quote-box` div to the HTML string.
 ***/
 
 
 
 
 /***
-  When the "Show another quote" button is clicked, the event listener 
-  below will be triggered, and it will call, or "invoke", the `printQuote` 
-  function. So do not make any changes to the line of code below this 
+  When the "Show another quote" button is clicked, the event listener
+  below will be triggered, and it will call, or "invoke", the `printQuote`
+  function. So do not make any changes to the line of code below this
   comment.
 ***/
 
-document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+//UNCOMMENT AFTER FINISHING printQuote()
+//document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 
 // Remember to delete the comments that came with this file, and replace them with your own code comments.
