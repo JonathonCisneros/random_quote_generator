@@ -1,6 +1,6 @@
 /******************************************
-A Random Quote Generator
-By Jonathon Cisneros
+    A Random Quote Generator
+    By Jonathon Cisneros
 ******************************************/
 
 /***
